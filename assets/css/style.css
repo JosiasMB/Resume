@@ -308,6 +308,10 @@ footer{
         width: 125px;
         height: 130px;
     }
+    .icons{
+        width: 2em;
+        margin: 0.2em 2px 0 0.5em;
+    }
 }
 
 @media screen and (max-width: 638px){
