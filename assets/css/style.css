@@ -1,12 +1,13 @@
-html {
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: whitesmoke;
+}
+*{
     box-sizing: border-box;
 }
-body {
-    margin: 0;
-    min-height: 100vh;
-  }
-
- 
+/* Imagine profile style */
  #img-profile {
     width: 13em;
     height: 13em;
@@ -14,13 +15,13 @@ body {
     display:inline-flex;
     margin: -1em 0 0 -2em;
     padding: 0%;
-
 }
 #img-profile:hover{
-    
-    border-radius: 6em;
+    border-radius: 50%;
+    margin-left: 2px;
     overflow: hidden;
 }
+/* Name style  */
 h1 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
@@ -28,10 +29,8 @@ h1 {
     font-size: 7em;
     margin: 0;
     color: rgb(255, 255, 255);
-
-
 }
-/* 3d efect*/
+/* 3d efect applied to name */
 .name {
     letter-spacing: .1em;
     text-shadow: 
@@ -52,14 +51,13 @@ h1 {
       0px 15px 0 #121212,
       8px 28px 35px rgba(0, 0, 0, 0.9);
  }
-
+ /* Div name */
 .main{
-    background: linear-gradient(90deg, rgba(179,214,214,0.9920343137254902) 12%, rgba(193,204,210,1) 31%, rgb(231, 238, 238) 66%, rgba(250, 253, 254, 0.464) 100%);
+    background: linear-gradient(90deg, rgba(210, 243, 243, 0.992) 12%, rgba(193,204,210,1) 31%, rgb(231, 238, 238) 66%, rgba(250, 253, 254, 0.464) 100%);
     padding: 1em;
-    margin: 0%;
-    
+    margin: auto; 
 }
-
+/* Div ocupation and future position */
 #wannaBe{
     text-align: center;
     margin: 0;
@@ -68,28 +66,7 @@ h1 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
 }
-/*
-.sub-titles{
-    width: fit-content;
-    padding: 1em;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    background: rgb(161, 181, 182);
-}
-*/
-.sub-titles:hover{
-    background: rgb(15,17,17);
-    background: linear-gradient(90deg, rgba(15,17,17,0.9920343137254902) 22%, rgba(33,32,37,0.9668242296918768) 39%, rgba(20,20,22,0.8855917366946778) 66%, rgba(75,87,89,0.8407738095238095) 100%);
-    color: white;
-
-}
-
-/*tables */
-
-
-
+/* Dates on work experience  */
 .dates{
     font-style: oblique;
     margin-left: 6em;
@@ -97,83 +74,54 @@ h1 {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#dates:hover{
-    transform: scale(1.2);
-}
-
-table {
-    width: auto;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-    margin-top: 2em;
-
-}
+/* Div sub-titles */
 .sub-titles{
 background-color: rgba(44, 147, 237, 0.455);
 padding: 1em;
-margin: 0.5em;
 border-radius: 0.2em;
 text-align: center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 1.3em;
-width: 3em;
-
-
+width: 90%;
+margin: 0%;
+text-transform: uppercase;
 }
-
+.sub-titles:hover{
+    background: rgb(15,17,17);
+    background: linear-gradient(90deg, rgba(15,17,17,0.9920343137254902) 22%, rgba(33,32,37,0.9668242296918768) 39%, rgba(20,20,22,0.8855917366946778) 66%, rgba(75,87,89,0.8407738095238095) 100%);
+    color: white;
+}
+/* div container */
+.container {
+    display: flex;
+    padding: 15px;
+}
+/* information div (columns) */
 .col-1{
-    width: 270px;
+    width: 300px;
     text-align: justify;
-    padding: 1em;
+    padding: 10px;
+    flex: 2;
 }
 .col-2{
-    width: 250px;
-    padding: 0 0.5em 0 0.5em;
-
+    width: 280px;
+    text-align: justify;
+    padding: 10px;
+    flex: 2;
 }
 .col-3{
-    width: 350px;
-    padding: 1em;
-
+    width: 400px;
+    text-align: justify;
+    padding: 10px;
+    flex: 3;
 }
 .col-4{
     width: 600px;
-    padding: 1em;
-
+    text-align: justify;
+    padding: 10px;
+    flex-grow: 1;
 }
-.col-5{
-    width: 250px;
-
-}
-.col {
-    border-right: .2px;
-    border-color: rgba(0, 0, 0, 0.21);
-    border-style:ridge;
-    border-left: unset;
-    border-bottom: unset;
-    border-top: unset;
-}
-/*
-.enjoy {
-    background-color: rgba(191, 244, 193, 0.773);
-    list-style: none;
-    margin: 0.1em 0 0.2em 0;
-    padding: 1em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1em;
-    width: 60%;
-}
-
-.enjoy:hover{
-    transform: scale(1.1);
-    color: aliceblue;
-    background: rgb(16,222,222);
-background: linear-gradient(90deg, rgba(16,222,222,0.9920343137254902) 12%, rgba(45,33,219,1) 39%, rgba(76,34,180,0.8547794117647058) 66%, rgba(128,223,237,0.7875525210084033) 100%);
-}
-*/
-
+/* icon on footer*/
 .linux{
     margin: 0em 0.2em 0 0.2em;
     padding: 0%;
@@ -181,20 +129,15 @@ background: linear-gradient(90deg, rgba(16,222,222,0.9920343137254902) 12%, rgba
 }
 .icons{
     width: 3em;
-    margin: 0.5em 2em 0 2em;
+    margin: 0.5em 10px 0 2em;
     padding: 0%;
+    display:inline-block;
 }
 .icons:hover{
     transform: scale(1.2);
     filter: contrast(200%);
 }
-.rueda{
-    width: 9em;
-    padding: 0%;
-    margin-bottom: 0%;
-    margin-left: 3em;
-    animation: rodar 3s infinite linear;
-}
+/* Date and time style */
 #ct5{
     font-size: 19px;
     color: aliceblue;
@@ -204,16 +147,7 @@ background: linear-gradient(90deg, rgba(16,222,222,0.9920343137254902) 12%, rgba
     margin: 0;
     border-radius: 0.3em;
 }
-@keyframes rodar {
-   100% {
-    transform: rotate(360deg);
-   } 
-    
-}
-.time:hover{
-    transform: scale(1.3);
-}
-
+/* Hidden text style */
 .texto {
     display: none;
     background-color: rgb(5, 5, 5);
@@ -223,16 +157,191 @@ background: linear-gradient(90deg, rgba(16,222,222,0.9920343137254902) 12%, rgba
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3em;
     margin: 0;
-    position: absolute;
     width: 96%;
     letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
+  /* "Touch me" text style and hover*/
   .hidden{
     text-align: center;
-    margin: 0;
+    margin-bottom: 15px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
   }
   .hidden:hover .texto {
     display: block;
   }
+
+/* Footer */
+footer{
+    height: 300px; 
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.7707457983193278) 47%, rgba(171,197,231,0.8323704481792717) 100%);
+    align-content: center;
+    text-align: left;
+    padding: 25px;
+} 
+.footer-p{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
+/* Media Query - responsive */
+@media screen and (max-width: 1000px){
+    .name {
+        letter-spacing: 3px;
+        text-shadow: 
+          0px 0.5px 0 #2e2e2e, 
+          0px 1px 0 #2c2c2c, 
+          0px 1.5px 0 #2a2a2a, 
+          0px 2px 0 #282828, 
+          0px 2.5px 0 #262626, 
+          0px 3px 0 #242424, 
+          0px 3.5px 0 #222, 
+          0px 4px 0 #202020, 
+          0px 4.5px 0 #1e1e1e, 
+          0px 5px 0 #1c1c1c, 
+          0px 5.5px 0 #1a1a1a, 
+          0px 6px 0 #181818, 
+          0px 6.5px 0 #161616, 
+          0px 7px 0 #141414, 
+          0px 7.5px 0 #121212,
+          4px 14px 17.5px rgba(0, 0, 0, 0.9);
+     }
+    .container {
+        display:inline-block;
+        width: 100%;
+    }
+    .col-1{
+        width: 100%;
+
+    }
+    .col-2{
+        width: 100%;
+
+    }
+    .col-3{
+        width: 100%;
+
+    }
+    .col-4{
+        width: 100%;
+
+    }
+    h1{
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+    #img-profile {
+        width: 150px;
+        height: 156px;
+    }
+    #wannaBe{ 
+        font-size: 30px;
+    }
+
+.icons{
+    width: 2.5em;
+    margin: 0.2em 5px 0 1em;
+}
+#ct5{
+    font-size: 15px;
+}
+.sub-titles{
+    font-size: 1.3em;
+    width: 100%;
+    text-transform: uppercase;
+    }
+    .texto{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 917px){
+    h1{
+        font-size: 55px;
+    }
+    #wannaBe{ 
+        font-size: 25px;
+    }
+    .main {
+        height: 150px;
+    }
+    #img-profile {
+        width: 135px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 738px){
+    h1{
+        font-size: 45px;
+    }
+    #wannaBe{ 
+        font-size: 20px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+    .texto {
+        display: none;
+        padding: 20px;
+        font-size: 40px;
+        letter-spacing: 0.14em;
+      }
+}
+@media screen and (max-width: 638px){
+    h1{
+        font-size: 40px;
+    }
+    #wannaBe{ 
+        font-size: 20px;
+    }
+    .main{
+        height: 130px;
+    }
+    #img-profile {
+        width: 125px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 638px){
+    h1{
+        font-size: 30px;
+    }
+    #wannaBe{ 
+        font-size: 15px;
+    }
+    .main{
+        height: 100px;
+    }
+    #img-profile {
+        width: 110px;
+        height: 100px;
+    }
+    .sub-titles {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    h1{
+        font-size: 25px;
+    }
+    #wannaBe{ 
+        font-size: 12px;
+    }
+    .main{
+        height: 80px;
+    }
+    #img-profile {
+        width: 90px;
+        height: 80px;
+    }
+}
